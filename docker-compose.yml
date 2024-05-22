@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: checkify-backend
+    container_name: checkify-node-server
+    ports:
+      - "4040:4040"
+    env_file: ./backend/.env
+    environment:
+      - NODE_ENV=development
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: checkify-frontend
+    container_name: checkify-react-frontend
+    ports:
+      - "3000:3000"
