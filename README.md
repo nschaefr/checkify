@@ -21,3 +21,23 @@ Alle ausgeführten Tätigkeiten und Daten des Nutzers sind persistent und werden
 - Datenbank: MongoDB
 
 ## Installation und Verwendung
+#### Docker
+Wechsle in `root` und führe folgenden Befehl aus:
+```bash
+docker-compose up -d
+```
+
+#### Node - npm
+Wechsle in `frontend` und führe folgenden Befehl aus:
+```bash
+npm install
+npm run dev
+```
+
+Wechsle in `backend` und führe folgenden Befehl aus:
+```bash
+npm install
+nodemon index.js
+```
+
+Das Frontend ist nun über den <http://localhost:3000> erreichbar, während das Backend über den <http://localhost:4040> läuft.
