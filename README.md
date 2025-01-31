@@ -41,4 +41,4 @@ npm install
 nodemon index.js
 ```
 
-The frontend is now accessible via <http://localhost:3000>, while the backend runs via <http://localhost:4040
+The frontend is now accessible via <http://localhost:3000>, while the backend runs via <http://localhost:4040>
