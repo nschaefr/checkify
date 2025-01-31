@@ -1,43 +1,44 @@
 # Checkify
-Checkify ist eine **Full Stack Todo-Anwendung**, welche dem Nutzer ermöglicht seinen Tag zu organiseren, in dem er **Todos** übersichtlich auflisten, abhaken und in Kategorien unterteilen kann.
+Checkify is a **Full Stack Todo Application**, which enables the user to organise his day by clearly listing **Todos**, ticking them off and dividing them into categories.
 
-### Funktionalitäten
+### Functionalities
 
-#### Authentifizierung
-Der Nutzer hat die Möglichkeit sich mit einem Username und Passwort zu authentifizieren. Beim erstmaligen Login kann sich der Nutzer einen Username aussuchen (mit der Vorraussetzung, dass dieser nicht vergeben ist) und ein Passwort frei wählen (mindestens 8-stellig). Ist der Nutzer schon registriert, muss er im Besitz des zum Username gehörigen Passwortes sein, um auf den Account zugreifen zu können.
+#### Authentication
+The user has the option of authenticating themselves with a username and password. When logging in for the first time, the user can choose a username (provided that it is not already taken) and a password (at least 8 digits). If the user is already registered, they must be in possession of the password associated with the username in order to access the account.
 
-#### Arbeiten mit Todos
-Der Nutzer hat die Möglichkeit ein Todo mit der dazugehörigen Beschreibung zu erstellen, das Todo zu bearbeiten (Klick in Todobeschreibung), zu löschen und als erledigt zu markieren. Desweiteren werde alle Todos übersichtlich in einer Liste präsentiert.
+#### Working with todos
+The user has the option of creating a todo with the corresponding description, editing the todo (click in the todo description), deleting it and marking it as completed. Furthermore, all todos are clearly presented in a list.
 
-#### Kategorisieren von Todos
-Der Nutzer hat die Möglichkeit seine Todos in Kategorien zu unterteilen, um eine bessere Übersicht zu schaffen.
+#### Categorising todos
+The user has the option of categorising his todos in order to create a better overview.
 
-#### Konsistente Datenbank-Speicherung
-Alle ausgeführten Tätigkeiten und Daten des Nutzers sind persistent und werden in einer Datenbank gespeichert. 
+#### Consistent database storage
+All activities and data performed by the user are persistent and are stored in a database. 
 
-## Technologiestack
+## Technology stack
 - Frontend: ReactJS
-- Backend: NodeJS mit ExpressJS
-- Datenbank: MongoDB
+- Backend: NodeJS with ExpressJS
+- Database: MongoDB
 
-## Installation und Verwendung
+## Installation and use
 #### Docker
-Wechsle in `root` und führe folgenden Befehl aus:
+Change to `root` and execute the following command:
 ```bash
 docker-compose up -d
 ```
 
 #### Node - npm
-Wechsle in `frontend` und führe folgenden Befehl aus:
+Switch to frontend and execute the following command:
 ```bash
 npm install
 npm run dev
 ```
 
-Wechsle in `backend` und führe folgenden Befehl aus:
+Switch to backend and execute the following command:
+
 ```bash
 npm install
 nodemon index.js
 ```
 
-Das Frontend ist nun über den <http://localhost:3000> erreichbar, während das Backend über den <http://localhost:4040> läuft.
+The frontend is now accessible via <http://localhost:3000>, while the backend runs via <http://localhost:4040
